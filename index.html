@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Html is hyper text markup language and it is also called as Standard markup language , it describes the structure of the web page with series of elements -->
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoNook</title>
+    <script src="https://kit.fontawesome.com/e26316daf2.js" crossorigin="anonymous"></script>
+    <script src="https://media.twiliocdn.com/sdk/js/client/v1/twilio.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>AutoNook</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rent">Rent</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href= "Registration.html">Registration</a></li>
+            <li class="contactli"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="header" id="home">
+        <div class="container1">
+            <h1>Drive Your <span style="color: #E3AF17; border-bottom: solid 3px #E3AF17;">Dreams</span></h1>
+            <p id="para1">Rent Your Ride!</p>
+            <p id="p1">Auto Nook – your go-to destination for stress-free and reliable car rentals! At Auto Nook, we prioritize your comfort and satisfaction, offering a diverse fleet of well-maintained vehicles for every journey.</p>
+            <a href="https://www.linkedin.com/company/101552193/admin/feed/posts/" target="_blank"><button type="button">Connect<i class="fa-solid fa-link"></i></i></button></a>
+        </div>
+        <img src="headerimage.jpg" alt="">
+    </header>
+    
+    
+    <!--Rent Car section -->
+    <section class="rent" id="rent">
+        <div class="line">
+            <div></div>
+            <i class="fa-solid fa-car"></i>
+            <div></div>
+        </div>
+        <h1>RENT CAR FOR YOUR NEXT JOURNEY</h1>
+      
+    <div class="rental-info">
+        <div class="car-img" id="car-img">
+            <img src="swiftimg.jpg" id="selected-car">
+        </div>
+        <div class="customer-info">
+            <div class="info1">
+                <div class="option">
+                    <p>Select car: </p>
+                    <select id="header-select-car" onchange="updateCarImage()"> 
+                        <option value="swift">Maruti Swift</option>
+                        <option value="grandi10">Grand i10</option>
+                        <option value="ertiga">Maruti Ertiga</option>
+                        <option value="scorpio">Mahindra Scorpio</option>
+                        <option value="innova">Toyota Innova</option>
+                        <option value="ecosport">Ford Ecosport</option>
+                        <option value="seltos">Kia Seltos</option>
+                    </select>
+                </div>
+    
+                <div class="pick">
+                    <p>Journey Date: </p>
+                    <input type="date" id="pick-up">
+                    
+                </div>
+    
+                <div class="city">
+                    <p>From: </p>
+                    <!-- <input type="date" id="drop-off"> -->
+                    <select id="selected-city-from">
+                        <option value="bhopal">Bhopal</option>
+                        <option value="indore">Indore</option>
+                        <option value="betul">Betul</option>
+                        <option value="nagpur">Nagpur</option>
+                        <option value="ujjain">Ujjain</option>
+                        <option value="sehore">Sehore</option>
+                        <option value="dewas">Dewas</option>
+                        <option value="jabalpur">Jabalpur</option>
+                    </select>
+                    
+                </div>
+
+                <div class="city">
+                    <p>To: </p>
+                    <!-- <input type="date" id="drop-off"> -->
+                    <select id="selected-city-to">
+                        <option value="bhopal">Bhopal</option>
+                        <option value="indore">Indore</option>
+                        <option value="betul">Betul</option>
+                        <option value="nagpur">Nagpur</option>
+                        <option value="ujjain">Ujjain</option>
+                        <option value="sehore">Sehore</option>
+                        <option value="dewas">Dewas</option>
+                        <option value="jabalpur">Jabalpur</option>
+                    </select>
+                    
+                </div>
+
+                
+
+            </div>
+
+            <div class="info2">
+
+            <form id="customerform" action="">
+
+            <input type="text" placeholder="Enter Your Name" id="customer-name" required>
+            <input type="email" id="customer-email" placeholder="Enter Your Email" required>
+            <input type="tel" id="customer-phone" placeholder="Enter Your Mobile No." required>
+            <input type="text" id="customer-address" placeholder="Enter Your Address" required>
+            <button type="submit" id="submit">Book <i class="fa-solid fa-car"></i></button>
+
+        </form>  
+
+        </div>
+    </div>
+        
+    </div>
+
+    </section>
+
+
+    
+    <!-- Services Section -->
+    <section class="service" id="service">
+        <div class="line">
+            <div></div>
+            <i class="fa-solid fa-car"></i>
+            <div></div>
+        </div>
+        <h1>WHAT SERVICES WE OFFER TO OUR CLIENTS</h1>
+        <div class="services">
+            <div class="service-container">
+                <div class="service1">
+                    <i class="fa-solid fa-clock" style="font-size: 24px;"></i>
+                    <p>24/7 Support</p>
+                </div>
+                <p>Auto Nook takes pride in providing unparalleled 24/7 support to ensure a seamless and worry-free experience for our customers. Our dedicated support team is always ready to assist you, whether it's answering inquiries, addressing concerns, or providing assistance during your rental journey ,no matter the time or day. </p>
+                <a href="https://www.linkedin.com/company/101552193/admin/feed/posts/" target="_blank"><button type="button">Know More<i class="fa-solid fa-square-arrow-up-right" style="font-size: 15px;"></i></button></a>
+
+            </div>
+            <div class="service-container">
+                <div class="service1">
+                    <i class="fa-solid fa-taxi" style="font-size: 24px;"></i>
+                    <p>Luxury Cars</p>
+                </div>
+                <p>Indulge in luxury and make your special occasions truly unforgettable with Auto Nook's Luxury Car Service. Our fleet of exquisite vehicles is curated to elevate the glamour of weddings.From sleek sedans to sophisticated limousines,each ride is a statement of opulence and style.</p>
+                <a href="https://www.linkedin.com/company/101552193/admin/feed/posts/" target="_blank"><button type="button">Know More<i class="fa-solid fa-square-arrow-up-right" style="font-size: 15px;"></i></button></a>
+
+                
+            </div>
+            <div class="service-container">
+                <div class="service1">
+                    <i class="fa-solid fa-tree-city" style="font-size: 24px;"></i>
+                    <p>Intercity Trips</p>
+                </div>
+                <p>Whether you're planning a business venture or a leisurely escape, our intercity service offers a seamless and enjoyable travel experience. Choose from a diverse fleet of well-maintained vehicles, driven by professional and courteous chauffeurs, ensuring safety and reliability on every mile of your intercity adventure.</p>
+                <a href="https://www.linkedin.com/company/101552193/admin/feed/posts/" target="_blank"><button type="button">Know More<i class="fa-solid fa-square-arrow-up-right" style="font-size: 15px;"></i></button></a>
+                
+            </div>
+        </div>
+       
+
+
+    </section>
+
+
+    
+    <!-- car section -->
+    <section class="cars" id="cars">
+        <div class="line">
+            <div></div>
+            <i class="fa-solid fa-car"></i>
+            <div></div>
+        </div>
+        <h1>AUTONOOK CARS COLLECTION</h1>
+        <div class="cars-details">
+            <!-- this is image div -->
+            <div class="carimgdiv">
+                <img src="swiftimg.jpg" id="cars-img">
+            </div> 
+
+            <!-- this is details div side wala img ka side ma -->
+            <div class="details">
+
+                <!-- isme drop down or button rehengi-->
+                <div class="getdetails">
+                    <select id="carsdropdown" onchange="updateImage()">
+                        <option value="swift">Maruti Swift</option>
+                        <option value="grandi10">Grand i10</option>
+                        <option value="ertiga">Maruti Ertiga</option>
+                        <option value="scorpio">Mahindra Scorpio</option>
+                        <option value="innova">Toyota Innova</option>
+                        <option value="ecosport">Ford Ecosport</option>
+                        <option value="seltos">Kia Seltos</option>
+                    </select>
+                    <button type="button" onclick="getCarDetails()">Get Details<i class="fa-solid fa-car" style="font-size: 15px;"></i></button>
+                </div>
+                <div class="car-info">
+                    <div id="div1">
+                        <p>Class</p>
+                    </div>
+                    <div id="div2">
+                        <p id="class">subcompact car</p>
+                    </div>
+                </div>
+
+                <div class="car-info">
+                    <div id="div1">
+                        <p>Fuel Type</p>
+                    </div>
+                    <div id="div2">
+                        <p id="fuel-type">gas</p>
+                    </div>
+                </div>
+
+                <div class="car-info">
+                    <div id="div1">
+                        <p>Company</p>
+                    </div>
+                    <div id="div2">
+                        <p id="make">suzuki</p>
+                    </div>
+                </div>
+
+                <div class="car-info">
+                    <div id="div1">
+                        <p>Model</p>
+                    </div>
+                    <div id="div2">
+                        <p id="model">swift</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <div class="line">
+            <div></div>
+            <i class="fa-solid fa-car"></i>
+            <div></div>
+        </div>
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <div class="contact-div1">
+                <p id="para1">Contact Us</p>
+                <p id="para2">Reach out for assistance or inquiries. We're here to help!</p>
+                <div class="contact-para">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>autonook@gmail.com</p>
+                </div>
+                <div class="contact-para">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Betul, Madhya Pradesh</p>
+                </div>
+                <div class="links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="contact-div2">
+                <form id="contactform" action="">
+                <input type="text" id="name" placeholder="Enter your Name" required>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+                <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <button id="send-msg">Send Message<i class="fa-solid fa-square-arrow-up-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer section -->
+    <footer id="footer">
+        <p>&copy; 2024 AutoNook. All rights reserved.</p>
+    </footer>
+
+    
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+          
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+          import { getDatabase, ref, set, get, child} from "https://www.gstatic.com/firebasejs/10.7.2/firebase-database.js";
+    
+    
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAQ5fHDWYQQ2at861CokqD0N-J0o-GsWJs",
+            authDomain: "autonook-bookcar.firebaseapp.com",
+            projectId: "autonook-bookcar",
+            storageBucket: "autonook-bookcar.appspot.com",
+            messagingSenderId: "1083118580925",
+            appId: "1:1083118580925:web:5c34f7d9338a4bacf773d4"
+        };
+
+    
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+    
+          const db = getDatabase(app);
+          
+    
+          document.getElementById("submit").addEventListener('click', function(e){
+
+            e.preventDefault();
+
+            const carSelected = document.getElementById("header-select-car").value;
+            const pickupDate = document.getElementById("pick-up").value;
+            const selectedCityfrom = document.getElementById("selected-city-from").value;
+            const selectedCityto = document.getElementById("selected-city-to").value;
+            const customerName = document.getElementById("customer-name").value;
+            const customerEmail = document.getElementById("customer-email").value;
+            const customerPhone = document.getElementById("customer-phone").value;
+            const customerAddress = document.getElementById("customer-address").value;
+
+            var pattern = /^[6-9]\d{9}$/;
+
+            if (carSelected && pickupDate && selectedCityfrom && selectedCityto && customerName && customerEmail && pattern.test(customerPhone) && customerAddress) {
+            // All fields are filled, proceed with booking
+            set(ref(db, 'Bookings/' + customerName), {
+                carSelected: carSelected,
+                pickupDate: pickupDate,
+                From:selectedCityfrom,
+                To:selectedCityto,
+                customerName: customerName,
+                customerEmail: customerEmail,
+                customerPhone: customerPhone,
+                customerAddress: customerAddress
+            });
+
+            alert("Thanks for Booking, We will contact you Shortly");
+            document.getElementById("customerform").reset();
+
+            get(ref(db, 'DriverInfo' , 'Bookings' )).then((snapshot) => {
+                if(snapshot.exists()){
+                    let driverFound = false;
+
+                    snapshot.forEach((childsnapshot) => {
+                        const driverInfo = childsnapshot.val();
+                        const drivername = driverInfo.DriverName;
+                        const car = driverInfo.car;
+                        const fromLocation = driverInfo.From;
+                        const toLocation = driverInfo.To;
+                        const driverNumber = driverInfo.mobileNo;
+
+
+                        if(carSelected === car && selectedCityfrom === fromLocation && selectedCityto === toLocation){
+                            alert("Driver is found , we will contact you shortly");
+
+                            var apiUrl = 'https://www.fast2sms.com/dev/bulkV2';
+                            var apiKey = 'b13XZZjA00jLrSLEJE8h9p0QqZYkymF0L2Uu75ovDXjwDbXkMwEloPgzAwe9';
+
+                            var params = new URLSearchParams({
+                                'authorization': apiKey,
+                                'message': `Thanks for Booking At Autonooks ,\n DriverName:${drivername} , Car: ${car} , DriverNumber: ${driverNumber} , From: ${fromLocation}, To:${toLocation} \n\n Please Contact the driver to check their Availability `,
+                                'language': 'english',
+                                'route': 'q',
+                                'numbers': customerPhone
+                            });
+
+                            var url = apiUrl + '?' + params.toString();
+
+                            fetch(url, {
+                                    method: 'GET'
+                                })
+                                .then(response => {
+                                    if (response.ok) {
+                                        return response.json();
+                                    } else {
+                                        throw new Error('Failed to send message');
+                                    }
+                                })
+                                .then(data => {
+                                    console.log('Message sent successfully:', data);
+                                    // Handle success response here
+                                })
+                                .catch(error => {
+                                    console.error('Error sending message:', error);
+                                    // Handle error here
+                                });
+                                
+                            driverFound = true;
+                            return;
+                        }
+                    });
+                    if (!driverFound) {
+                    alert("No driver found for the specified criteria.");
+                }
+            }else {
+                alert("No drivers found in the AutoNooks Database.");
+            }
+        }).catch((error) => {
+            alert("Error retrieving driver information:", error);
+        });
+    } else {
+            // Notify user to fill in all fields
+            alert("Please fill in all fields to book the car, or check the mobile number");
+        }
+    });
+
+    document.getElementById("send-msg").addEventListener('click', function(e){
+        e.preventDefault();
+
+        var CustomerName = document.getElementById("name").value;
+        var CustomerEmail = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        
+        if (CustomerName && CustomerEmail) {
+            // All fields are filled, proceed with booking
+            set(ref(db, 'Contact/' + CustomerName), {
+                Name: CustomerName,
+                Email: CustomerEmail,
+                Message: message,
+            });
+            alert("Your Message has been sent Successfully!");
+            document.getElementById("contactform").reset();
+        } else {
+            // Notify user to fill in all fields
+            alert("Please Enter your Name and Email");
+        }
+    });
+
+    
+
+
+
+    </script>
+    
+    
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
