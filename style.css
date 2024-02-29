@@ -83,46 +83,30 @@ html, body{
 
 /* Header section starts here */
 
-header{
-    position: relative;
-    width: 100vw;
+.header{
+    width: 100%;
     height: 100vh;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    
 }
-
-header img{
-    position: absolute;
-    left: 80vmax;
-    width: 35vw;
-    transform: translateX(-50%);
-    animation: moveUpDown 3s infinite alternate;
-}
-
-
 
 .header .container1{
-    position: absolute;
-    background: black;
-    top: 120px;
-    left: 40px;
-} 
+    width: 55%;
+    height: 100vh;
+    padding: 9vmax 40px;
+}
 
 .header .container1 h1{
     font-size: 60px;
     color: whitesmoke;
-    margin-left: 10px;
-
 }
 
 .header .container1 #para1{
-    
+        
     font-size: 40px;
     color: whitesmoke;
-    margin-left: 10px;
     margin-top: 10px;
 }
 
@@ -130,12 +114,8 @@ header img{
     width: 50vmax;
     font-size: 21px;
     color: #E3AF17;
-    margin-left: 10px;
     margin-top: 20px;
-    margin: 20px 0px 20px 10px;
 }
-
-
 
 .header .container1 button{
     margin-top: 40px;
@@ -144,7 +124,6 @@ header img{
     padding: 10px 30px 10px;
     border: solid #E3AF17;
     border-radius: 20px;
-    margin-left: 10px;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
@@ -155,6 +134,62 @@ header img{
     transform: scale(1.1);
     transition: transform 0.5s;
 }
+
+.header .container2{
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.container2 .containerdiv1{
+    width: fit-content;
+    border: solid 2px #E3AF17;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.container2 .containerdiv1 img{
+    width: 17vw;
+    border-radius: 10px;
+}
+
+.container2 .containerdiv2{
+    position: absolute;
+    width: fit-content;
+    border: solid 2px #E3AF17;
+    padding: 10px;
+    margin: 10px;
+    top: 13vmax;
+    left: 23vmax;
+    border-radius: 10px;
+}
+
+.container2 .containerdiv2 img{
+    width: 17vw;
+    border-radius: 10px;
+}
+
+.container2 .containerdiv3{
+    position: absolute;
+    width: fit-content;
+    border: solid 2px #E3AF17;
+    padding: 10px;
+    margin: 10px;
+    top: 24vmax;
+    border-radius: 10px;
+}
+
+.container2 .containerdiv3 img{
+    width: 17vw;
+    border-radius: 10px;
+}
+
+
 
 /* Header section Ends here */
 
@@ -232,26 +267,34 @@ header img{
 }
 
 .pick input{
-    background: black;
-    color: whitesmoke;
+    background: white;
+    color: black;
     padding: 3px 10px;
     font-family: "Poppins", sans-serif;
-    
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
 }
 
 .city select{
-    background: black;
-    color: whitesmoke;
+    background: white;
+    color: black;
     padding: 3px 10px;
     font-family: "Poppins", sans-serif;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
     
 }
 
 .option select{
-    background: black;
-    color: whitesmoke;
-    padding: 3px 2px;
+    background: white;
+    color: black;
+    padding: 3px 10px;
     font-family: "Poppins", sans-serif;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
 }
 
 .customer-info button{

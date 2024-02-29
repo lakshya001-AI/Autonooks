@@ -32,13 +32,28 @@
 
     <!-- Header -->
     <header class="header" id="home">
+
         <div class="container1">
             <h1>Drive Your <span style="color: #E3AF17; border-bottom: solid 3px #E3AF17;">Dreams</span></h1>
             <p id="para1">Rent Your Ride!</p>
-            <p id="p1">Auto Nook – your go-to destination for stress-free and reliable car rentals! At Auto Nook, we prioritize your comfort and satisfaction, offering a diverse fleet of well-maintained vehicles for every journey.</p>
+            <p id="p1">Auto Nook isn't just about renting cars; it's all about making things easy for drivers in Betul. We're here to help them rent a car without any trouble. Our goal is to give Betul's drivers a smooth and stress-free rental experience.</p>
             <a href="https://www.linkedin.com/company/101552193/admin/feed/posts/" target="_blank"><button type="button">Connect<i class="fa-solid fa-link"></i></i></button></a>
+
         </div>
-        <img src="headerimage.jpg" alt="">
+        <div class="container2">
+
+            <div class="containerdiv1">
+                <img src="autonookh1.jpg" alt="">
+            </div>
+            <div class="containerdiv2">
+                <img src="Autonookh2.jpg" alt="">
+            </div>
+            <div class="containerdiv3">
+                <img src="Autonookh3.jpg" alt="">
+            </div>
+
+        </div>
+
     </header>
     
     
@@ -350,7 +365,7 @@
             alert("Thanks for Booking, We will contact you Shortly");
             document.getElementById("customerform").reset();
 
-            get(ref(db, 'DriverInfo' , 'Bookings' )).then((snapshot) => {
+            get(ref(db, 'DriverInfo')).then((snapshot) => {
                 if(snapshot.exists()){
                     let driverFound = false;
 
