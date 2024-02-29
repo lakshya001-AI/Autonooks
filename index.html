@@ -21,8 +21,7 @@
         <h1>AutoNook</h1>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#rent">Rent</a></li>
-            <li><a href="#service">Services</a></li>
+            <li><a href="#rentcar">Rent</a></li>
             <li><a href="#cars">Cars</a></li>
             <li><a href= "Registration.html">Registration</a></li>
             <li class="contactli"><a href="#contact">Contact</a></li>
@@ -57,139 +56,39 @@
     </header>
     
     
-    <!--Rent Car section -->
-    <section class="rent" id="rent">
-        <div class="line">
-            <div></div>
-            <i class="fa-solid fa-car"></i>
-            <div></div>
-        </div>
+   <!-- rent section Autonook -->
+
+   <section class="rentcar" id="rentcar">
+
+    <div class="rentheading">
         <h1>RENT CAR FOR YOUR NEXT JOURNEY</h1>
-      
-    <div class="rental-info">
-        <div class="car-img" id="car-img">
-            <img src="swiftimg.jpg" id="selected-car">
+    </div>
+    <div class="line">
+        <div></div>
+        <i class="fa-solid fa-car"></i>
+        <div></div>
+    </div>
+
+    <div class="imginfo">
+        <div class="autonookimg">
+            <img src="grandi10img.jpg" alt="">
+
         </div>
-        <div class="customer-info">
-            <div class="info1">
-                <div class="option">
-                    <p>Select car: </p>
-                    <select id="header-select-car" onchange="updateCarImage()"> 
-                        <option value="swift">Maruti Swift</option>
-                        <option value="grandi10">Grand i10</option>
-                        <option value="ertiga">Maruti Ertiga</option>
-                        <option value="scorpio">Mahindra Scorpio</option>
-                        <option value="innova">Toyota Innova</option>
-                        <option value="ecosport">Ford Ecosport</option>
-                        <option value="seltos">Kia Seltos</option>
-                    </select>
-                </div>
-    
-                <div class="pick">
-                    <p>Journey Date: </p>
-                    <input type="date" id="pick-up">
-                    
-                </div>
-    
-                <div class="city">
-                    <p>From: </p>
-                    <!-- <input type="date" id="drop-off"> -->
-                    <select id="selected-city-from">
-                        <option value="bhopal">Bhopal</option>
-                        <option value="indore">Indore</option>
-                        <option value="betul">Betul</option>
-                        <option value="nagpur">Nagpur</option>
-                        <option value="ujjain">Ujjain</option>
-                        <option value="sehore">Sehore</option>
-                        <option value="dewas">Dewas</option>
-                        <option value="jabalpur">Jabalpur</option>
-                    </select>
-                    
-                </div>
 
-                <div class="city">
-                    <p>To: </p>
-                    <!-- <input type="date" id="drop-off"> -->
-                    <select id="selected-city-to">
-                        <option value="bhopal">Bhopal</option>
-                        <option value="indore">Indore</option>
-                        <option value="betul">Betul</option>
-                        <option value="nagpur">Nagpur</option>
-                        <option value="ujjain">Ujjain</option>
-                        <option value="sehore">Sehore</option>
-                        <option value="dewas">Dewas</option>
-                        <option value="jabalpur">Jabalpur</option>
-                    </select>
-                    
-                </div>
 
-                
-
-            </div>
-
-            <div class="info2">
-
-            <form id="customerform" action="">
-
-            <input type="text" placeholder="Enter Your Name" id="customer-name" required>
-            <input type="email" id="customer-email" placeholder="Enter Your Email" required>
-            <input type="tel" id="customer-phone" placeholder="Enter Your Mobile No." required>
-            <input type="text" id="customer-address" placeholder="Enter Your Address" required>
-            <button type="submit" id="submit">Book <i class="fa-solid fa-car"></i></button>
-
-        </form>  
+        <div class="autonookrentdetailsdiv">
 
         </div>
     </div>
-        
-    </div>
 
-    </section>
+
+
+
+   </section>
 
 
     
-    <!-- Services Section -->
-    <section class="service" id="service">
-        <div class="line">
-            <div></div>
-            <i class="fa-solid fa-car"></i>
-            <div></div>
-        </div>
-        <h1>WHAT SERVICES WE OFFER TO OUR CLIENTS</h1>
-        <div class="services">
-            <div class="service-container">
-                <div class="service1">
-                    <i class="fa-solid fa-clock" style="font-size: 24px;"></i>
-                    <p>24/7 Support</p>
-                </div>
-                <p>Auto Nook takes pride in providing unparalleled 24/7 support to ensure a seamless and worry-free experience for our customers. Our dedicated support team is always ready to assist you, whether it's answering inquiries, addressing concerns, or providing assistance during your rental journey ,no matter the time or day. </p>
-                <a href="https://www.linkedin.com/company/101552193/admin/feed/posts/" target="_blank"><button type="button">Know More<i class="fa-solid fa-square-arrow-up-right" style="font-size: 15px;"></i></button></a>
-
-            </div>
-            <div class="service-container">
-                <div class="service1">
-                    <i class="fa-solid fa-taxi" style="font-size: 24px;"></i>
-                    <p>Luxury Cars</p>
-                </div>
-                <p>Indulge in luxury and make your special occasions truly unforgettable with Auto Nook's Luxury Car Service. Our fleet of exquisite vehicles is curated to elevate the glamour of weddings.From sleek sedans to sophisticated limousines,each ride is a statement of opulence and style.</p>
-                <a href="https://www.linkedin.com/company/101552193/admin/feed/posts/" target="_blank"><button type="button">Know More<i class="fa-solid fa-square-arrow-up-right" style="font-size: 15px;"></i></button></a>
-
-                
-            </div>
-            <div class="service-container">
-                <div class="service1">
-                    <i class="fa-solid fa-tree-city" style="font-size: 24px;"></i>
-                    <p>Intercity Trips</p>
-                </div>
-                <p>Whether you're planning a business venture or a leisurely escape, our intercity service offers a seamless and enjoyable travel experience. Choose from a diverse fleet of well-maintained vehicles, driven by professional and courteous chauffeurs, ensuring safety and reliability on every mile of your intercity adventure.</p>
-                <a href="https://www.linkedin.com/company/101552193/admin/feed/posts/" target="_blank"><button type="button">Know More<i class="fa-solid fa-square-arrow-up-right" style="font-size: 15px;"></i></button></a>
-                
-            </div>
-        </div>
-       
-
-
-    </section>
+   
 
 
     

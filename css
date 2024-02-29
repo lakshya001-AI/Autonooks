@@ -1,0 +1,147 @@
+/* Rent section start here */
+
+.rent{
+    width: 100%;
+    height: auto;
+    background: black;
+    margin-top: 10vmax;
+    margin-bottom: 15vmax;
+    padding: 30px 40px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.rent h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.rental-info{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 2vmax;
+    justify-content: space-between;
+}
+
+.rental-info .car-img{
+    padding: 10px 30px;
+    border: solid 3px #E3AF17;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.rental-info .car-img:hover{
+    border: solid 3px #fff;
+}
+
+.rental-info .car-img img{
+    border-radius: 10px;
+    width: 30vmax;
+}
+
+.rental-info .customer-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.rental-info .customer-info .info1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info1 div{
+    width: 190px;
+    background: #E3AF17;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 15px;
+    color: black;
+}
+
+.info1 div:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.pick input{
+    background: white;
+    color: black;
+    padding: 3px 10px;
+    font-family: "Poppins", sans-serif;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+.city select{
+    background: white;
+    color: black;
+    padding: 3px 10px;
+    font-family: "Poppins", sans-serif;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    
+}
+
+.option select{
+    background: white;
+    color: black;
+    padding: 3px 10px;
+    font-family: "Poppins", sans-serif;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+.customer-info button{
+    margin-top: 40px;
+    width: 10vmax;
+    background: #E3AF17;
+    color: black;
+    padding: 10px 30px 10px;
+    border: solid #E3AF17;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.customer-info button:hover{
+    background: white;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.info2 form{
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-info .info2 form input{
+    margin-top: 10px;
+    background: black;
+    color: #fff;
+    padding: 10px 10px;
+    border: solid #E3AF17;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    outline: 0;
+}
+
+.customer-info .info2 form input:hover{
+    border: solid #fff;
+    transition: 0.5s;
+}
+
+/* Rent section ends here */
