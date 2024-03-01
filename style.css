@@ -219,8 +219,8 @@ html, body{
 
 .rentcar{
     width: 100%;
-    height: 100vh;
-    background-color: white;
+    height: 110vh;
+    background-color: rgb(215, 215, 215);
 }
 
 .rentheading{
@@ -239,7 +239,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .autonookimg{
@@ -255,15 +255,123 @@ html, body{
 }
 
 .autonookimg img{
+    width: 30vmax;
     border-radius: 20px;
 }
 
 .autonookrentdetailsdiv{
     width: 60%;
-    background-color: rgb(224, 224, 224);
     height: 78vh;
     margin: 10px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.city{
+    background-color: black;
+    color: #E3AF17;
+    padding: 15px;
+    border: solid #E3AF17 3px;
+    border-radius: 20px;
+}
+
+.option{
+    background-color: black;
+    color: #E3AF17;
+    padding: 15px;
+    border: solid #E3AF17 3px;
+    border-radius: 20px;
+}
+
+.pick{
+    background-color: black;
+    color: #E3AF17;
+    padding: 15px;
+    border: solid #E3AF17 3px;
+    border-radius: 20px;
+}
+
+.city select{
+    background: white;
+    color: black;
+    padding: 3px 10px;
+    font-family: "Poppins", sans-serif;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    
+}
+
+.option select{
+    background: white;
+    color: black;
+    padding: 3px 10px;
+    font-family: "Poppins", sans-serif;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+.pick input{
+    background: white;
+    color: black;
+    padding: 3px 10px;
+    font-family: "Poppins", sans-serif;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+.autonookrentdetailsdiv button{
+    margin-top: 30px;
+    width: 10vmax;
+    background: black;
+    color: #E3AF17;
+    padding: 10px 30px 10px;
+    border: 2px solid #E3AF17;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.autonookrentdetailsdiv button:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.info2 form{
+    display: flex;
+    flex-direction: column;
+}
+
+.info2{
+    padding: 10px 40px;
+    margin-top: 10px;
+}
+
+.autonookrentdetailsdiv .info2 form input{
+    margin: 20px 0px;
+    padding: 10px;
+    border: solid 3px black;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    outline: 0; 
+}
+
+.autonookrentdetailsdiv .info2 form input:hover{
+    border: solid #E3AF17;
+    transition: 0.5s;
 }
 
 
@@ -288,129 +396,141 @@ html, body{
     color: black;
 }
 
-/* Car section starts here */
-.cars{
+/* Driver Registration starts */
+
+.driverregistration{
+    width:  100%;
+    height: 140vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registrationheading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.registrationheading h1{
+    font-size: 29px;
+    margin-top: 15px;
+}
+
+.citydrivercars{
     width: 100%;
-    height: auto;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 10vmax;
-    margin-top: 5vmax;
-    padding-top: 2vmax;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 120px;
 }
 
-.cars h1{
-    font-size: 35px;
-    margin-top: 10px;
+.citydrivercars p{
+    padding: 25px;
+    border: #E3AF17 2px solid;
     text-align: center;
-}
-
-.cars .cars-details{
-    display: flex;
-    flex-direction: row;
-    padding: 70px 20vmax;
-    
-}
-
-.cars .cars-details .carimgdiv{
-    padding: 20px;
-    border: solid 3px #E3AF17;
+    margin-top: 60px;
     border-radius: 10px;
-    margin-right: 20px;
-    width: 35vmax;
-    height: 23vmax;
-}
-
-.cars .cars-details .carimgdiv img{
-    border-radius: 10px;
-    width: 30vmax;
-    height: 20vmax;
-}
-
-.cars .cars-details .carimgdiv:hover{
-    border: solid 3px white;
-    transition: 1s;
-}
-
-
-
-.details{
-    display: flex;
-    flex-direction: column;
-}
-
-.details .getdetails{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 50px;
-}
-
-.details .getdetails select{
-    margin: 0px 20px;
-    background: black;
-    color: #fff;
-    padding: 10px 20px;
-    border: solid #E3AF17 3px;
-    border-radius: 10px;
-    outline: #E3AF17;
-    font-family: "Poppins", sans-serif;
-}
-
-.details .getdetails button{
-    padding: 7px 15px;
-    font-family: "Poppins", sans-serif;
-    background: #E3AF17;
-    border: solid #E3AF17;
-    border-radius:20px;
     cursor: pointer;
 }
 
-.details .getdetails button i{
-    margin-left: 10px;
-}
-
-.details .getdetails button:hover{
-    background: white;
+.citydrivercars p:hover{
+    border: solid 2px white;
     transform: scale(1.1);
-    transition: transform 0.5s;
+    transition: transform 1.5s;
+    cursor: pointer;
 }
 
-.car-info{
+.driverregistrationdiv{
+    width: 100%;
+    padding: 0px 16vmax;
+    margin-top: 50px;
+}
+
+.test{
+    background-color: black;
+    width: 100%;
+    height: 80vh;
+    border-radius: 20px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border: solid #E3AF17 3px;
 }
 
-.car-info div{
-    padding: 10px 20px;
-    border: solid 3px #E3AF17;
-    border-radius: 10px;
-    margin: 10px 10px 0px 20px;
-    
+.test1{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url('https://images.unsplash.com/photo-1518614768202-663a3a0ecf59?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    /* background-image: url('https://t4.ftcdn.net/jpg/04/84/65/23/240_F_484652352_9IZQ7THB6xdkMElYnAwba1jCJwmAp1eO.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-.car-info div p{
-    color: #fff;
+.test1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for transparency */
+    border-radius: 20px; /* Ensure the overlay matches the border-radius of the main div */
 }
 
-.car-info #div1{
-    width: 9vmax;
+.text-overlay {
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: 10; /* Ensure the text is on top of the overlay */
 }
 
-.car-info #div2{
-    width: 12vmax;
+.text-overlay h1{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-size: 31px;
 }
 
-.car-info #div1:hover{
-    border: solid 3px white;
-    transition: 1s;
+.testpara{
+    padding: 10px 50px;
+    font-size: 21px;
+    margin-top: 10px;
 }
 
-.car-info #div2:hover{
-    border: solid 3px white;
-    transition: 1s;
+.testpara1{
+    padding: 10px 50px;
+    font-size: 21px;
+    margin-top: 10px;
 }
 
-/* Car section ends here */
+.registerbtn{
+    padding: 8px;
+    background-color: white;
+    border: solid #E3AF17 3px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Driver Registration ends */
 
 /* Contact us start's here */
 .contact{

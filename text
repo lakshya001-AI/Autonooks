@@ -1,21 +1,23 @@
-<!--Rent Car section -->
-<section class="rent" id="rent">
+   <!-- car section -->
+   <section class="cars" id="cars">
     <div class="line">
         <div></div>
         <i class="fa-solid fa-car"></i>
         <div></div>
     </div>
-    <h1>RENT CAR FOR YOUR NEXT JOURNEY</h1>
-  
-<div class="rental-info">
-    <div class="car-img" id="car-img">
-        <img src="swiftimg.jpg" id="selected-car">
-    </div>
-    <div class="customer-info">
-        <div class="info1">
-            <div class="option">
-                <p>Select car: </p>
-                <select id="header-select-car" onchange="updateCarImage()"> 
+    <h1>AUTONOOK CARS COLLECTION</h1>
+    <div class="cars-details">
+        <!-- this is image div -->
+        <div class="carimgdiv">
+            <img src="swiftimg.jpg" id="cars-img">
+        </div> 
+
+        <!-- this is details div side wala img ka side ma -->
+        <div class="details">
+
+            <!-- isme drop down or button rehengi-->
+            <div class="getdetails">
+                <select id="carsdropdown" onchange="updateImage()">
                     <option value="swift">Maruti Swift</option>
                     <option value="grandi10">Grand i10</option>
                     <option value="ertiga">Maruti Ertiga</option>
@@ -24,65 +26,43 @@
                     <option value="ecosport">Ford Ecosport</option>
                     <option value="seltos">Kia Seltos</option>
                 </select>
+                <button type="button" onclick="getCarDetails()">Get Details<i class="fa-solid fa-car" style="font-size: 15px;"></i></button>
+            </div>
+            <div class="car-info">
+                <div id="div1">
+                    <p>Class</p>
+                </div>
+                <div id="div2">
+                    <p id="class">subcompact car</p>
+                </div>
             </div>
 
-            <div class="pick">
-                <p>Journey Date: </p>
-                <input type="date" id="pick-up">
-                
+            <div class="car-info">
+                <div id="div1">
+                    <p>Fuel Type</p>
+                </div>
+                <div id="div2">
+                    <p id="fuel-type">gas</p>
+                </div>
             </div>
 
-            <div class="city">
-                <p>From: </p>
-                <!-- <input type="date" id="drop-off"> -->
-                <select id="selected-city-from">
-                    <option value="bhopal">Bhopal</option>
-                    <option value="indore">Indore</option>
-                    <option value="betul">Betul</option>
-                    <option value="nagpur">Nagpur</option>
-                    <option value="ujjain">Ujjain</option>
-                    <option value="sehore">Sehore</option>
-                    <option value="dewas">Dewas</option>
-                    <option value="jabalpur">Jabalpur</option>
-                </select>
-                
+            <div class="car-info">
+                <div id="div1">
+                    <p>Company</p>
+                </div>
+                <div id="div2">
+                    <p id="make">suzuki</p>
+                </div>
             </div>
 
-            <div class="city">
-                <p>To: </p>
-                <!-- <input type="date" id="drop-off"> -->
-                <select id="selected-city-to">
-                    <option value="bhopal">Bhopal</option>
-                    <option value="indore">Indore</option>
-                    <option value="betul">Betul</option>
-                    <option value="nagpur">Nagpur</option>
-                    <option value="ujjain">Ujjain</option>
-                    <option value="sehore">Sehore</option>
-                    <option value="dewas">Dewas</option>
-                    <option value="jabalpur">Jabalpur</option>
-                </select>
-                
+            <div class="car-info">
+                <div id="div1">
+                    <p>Model</p>
+                </div>
+                <div id="div2">
+                    <p id="model">swift</p>
+                </div>
             </div>
-
-            
-
         </div>
-
-        <div class="info2">
-
-        <form id="customerform" action="">
-
-        <input type="text" placeholder="Enter Your Name" id="customer-name" required>
-        <input type="email" id="customer-email" placeholder="Enter Your Email" required>
-        <input type="tel" id="customer-phone" placeholder="Enter Your Mobile No." required>
-        <input type="text" id="customer-address" placeholder="Enter Your Address" required>
-        <button type="submit" id="submit">Book <i class="fa-solid fa-car"></i></button>
-
-    </form>  
-
     </div>
-</div>
-    
-</div>
-
 </section>

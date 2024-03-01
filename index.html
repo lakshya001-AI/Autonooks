@@ -23,7 +23,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#rentcar">Rent</a></li>
             <li><a href="#cars">Cars</a></li>
-            <li><a href= "Registration.html">Registration</a></li>
+            <li><a href= "#driverregistration">Registration</a></li>
             <li class="contactli"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -71,12 +71,78 @@
 
     <div class="imginfo">
         <div class="autonookimg">
-            <img src="grandi10img.jpg" alt="">
-
+            <img src="swiftimg.jpg" alt="" id="selected-car">
         </div>
 
 
         <div class="autonookrentdetailsdiv">
+            <div class="info1">
+                <div class="option">
+                    <p>Select car: </p>
+                    <select id="header-select-car" onchange="updateCarImage()"> 
+                        <option value="swift">Maruti Swift</option>
+                        <option value="grandi10">Grand i10</option>
+                        <option value="ertiga">Maruti Ertiga</option>
+                        <option value="scorpio">Mahindra Scorpio</option>
+                        <option value="innova">Toyota Innova</option>
+                        <option value="ecosport">Ford Ecosport</option>
+                        <option value="seltos">Kia Seltos</option>
+                    </select>
+                </div>
+    
+                <div class="pick">
+                    <p>Journey Date: </p>
+                    <input type="date" id="pick-up">
+                </div>
+    
+                <div class="city">
+                    <p>From: </p>
+                    <!-- <input type="date" id="drop-off"> -->
+                    <select id="selected-city-from">
+                        <option value="bhopal">Bhopal</option>
+                        <option value="indore">Indore</option>
+                        <option value="betul">Betul</option>
+                        <option value="nagpur">Nagpur</option>
+                        <option value="ujjain">Ujjain</option>
+                        <option value="sehore">Sehore</option>
+                        <option value="dewas">Dewas</option>
+                        <option value="jabalpur">Jabalpur</option>
+                    </select>
+                    
+                </div>
+    
+                <div class="city">
+                    <p>To: </p>
+                    <!-- <input type="date" id="drop-off"> -->
+                    <select id="selected-city-to">
+                        <option value="bhopal">Bhopal</option>
+                        <option value="indore">Indore</option>
+                        <option value="betul">Betul</option>
+                        <option value="nagpur">Nagpur</option>
+                        <option value="ujjain">Ujjain</option>
+                        <option value="sehore">Sehore</option>
+                        <option value="dewas">Dewas</option>
+                        <option value="jabalpur">Jabalpur</option>
+                    </select>
+                    
+                </div>
+    
+                
+    
+            </div>
+            <div class="info2">
+
+                <form id="customerform" action="">
+        
+                <input type="text" placeholder="Enter Your Name" id="customer-name" required>
+                <input type="email" id="customer-email" placeholder="Enter Your Email" required>
+                <input type="tel" id="customer-phone" placeholder="Enter Your Mobile No." required>
+                <input type="text" id="customer-address" placeholder="Enter Your Address" required>
+                <button type="submit" id="submit">Book <i class="fa-solid fa-car"></i></button>
+        
+            </form>  
+        
+            </div>
 
         </div>
     </div>
@@ -87,84 +153,64 @@
    </section>
 
 
-    
-   
+   <!-- Driver Registration -->
 
+   <section class="driverregistration" id="driverregistration">
 
-    
-    <!-- car section -->
-    <section class="cars" id="cars">
-        <div class="line">
-            <div></div>
-            <i class="fa-solid fa-car"></i>
-            <div></div>
-        </div>
-        <h1>AUTONOOK CARS COLLECTION</h1>
-        <div class="cars-details">
-            <!-- this is image div -->
-            <div class="carimgdiv">
-                <img src="swiftimg.jpg" id="cars-img">
-            </div> 
+    <div class="registrationheading">
+        <h1>JOIN THE AUTONOOKS FAMILY</h1>
+    </div>
+    <div class="line">
+        <div></div>
+        <i class="fa-solid fa-car" style="color: white;"></i>
+        <div></div>
+    </div>
 
-            <!-- this is details div side wala img ka side ma -->
-            <div class="details">
+    <div class="citydrivercars">
+        <p>Operating in </br><span style="color: white; font-size: 40px; text-align: center; font-weight: 700;">15</span></br> cities</p>
+        <p>With </br><span style="color: white; font-size: 40px; text-align: center; font-weight: 700;">50</span></br> dedicated drivers</p>
+        <p>And a fleet of </br><span style="color: white; font-size: 40px; text-align: center; font-weight: 700;">20</span></br> cars</p>
+    </div>
 
-                <!-- isme drop down or button rehengi-->
-                <div class="getdetails">
-                    <select id="carsdropdown" onchange="updateImage()">
-                        <option value="swift">Maruti Swift</option>
-                        <option value="grandi10">Grand i10</option>
-                        <option value="ertiga">Maruti Ertiga</option>
-                        <option value="scorpio">Mahindra Scorpio</option>
-                        <option value="innova">Toyota Innova</option>
-                        <option value="ecosport">Ford Ecosport</option>
-                        <option value="seltos">Kia Seltos</option>
-                    </select>
-                    <button type="button" onclick="getCarDetails()">Get Details<i class="fa-solid fa-car" style="font-size: 15px;"></i></button>
+    <div class="driverregistrationdiv">
+
+        <div class="test">
+            <div class="test1">
+                <div class="text-overlay">
+                    <h1>Mission of AutoNook</h1>
+                    <p class="testpara">Our mission at AutoNook is to revolutionize the car rental service industry and support the drivers of Betul in securing bookings from various cities across Madhya Pradesh. We are dedicated to transforming the outdated booking system into an efficient online platform. By doing so, we aim to empower the drivers of Betul to maximize their profits and streamline their operations.</p>
+                    <p class="testpara1">हमारा लक्ष्य बेतुल के ड्राइवरों को भरोसा दिलाना भी है कि हम उनके साथ हैं। हमें विश्वास है कि ऑनलाइन प्रणाली के माध्यम से उन्हें अधिकतम लाभ प्राप्त करने और उनके कामकाज को सरल बनाने में मदद मिलेगी।</p>
+                    <button class="registerbtn">Driver Registration</button>
                 </div>
-                <div class="car-info">
-                    <div id="div1">
-                        <p>Class</p>
-                    </div>
-                    <div id="div2">
-                        <p id="class">subcompact car</p>
-                    </div>
-                </div>
-
-                <div class="car-info">
-                    <div id="div1">
-                        <p>Fuel Type</p>
-                    </div>
-                    <div id="div2">
-                        <p id="fuel-type">gas</p>
-                    </div>
-                </div>
-
-                <div class="car-info">
-                    <div id="div1">
-                        <p>Company</p>
-                    </div>
-                    <div id="div2">
-                        <p id="make">suzuki</p>
-                    </div>
-                </div>
-
-                <div class="car-info">
-                    <div id="div1">
-                        <p>Model</p>
-                    </div>
-                    <div id="div2">
-                        <p id="model">swift</p>
-                    </div>
                 </div>
             </div>
         </div>
-    </section>
+
+    </div>
+    
+
+   </section>
 
 
 
-    <!-- Contact section -->
-    <section class="contact" id="contact">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+ Contact section -->
+    <!-- <section class="contact" id="contact">
         <div class="line">
             <div></div>
             <i class="fa-solid fa-car"></i>
@@ -198,7 +244,7 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
