@@ -400,7 +400,7 @@ html, body{
 
 .driverregistration{
     width:  100%;
-    height: 140vh;
+    height: 150vh;
     background-color: black;
     display: flex;
     align-items: center;
@@ -482,7 +482,7 @@ html, body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for transparency */
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha value for transparency */
     border-radius: 20px; /* Ensure the overlay matches the border-radius of the main div */
 }
 
@@ -525,12 +525,96 @@ html, body{
     cursor: pointer;
 }
 
-
-
-
-
-
 /* Driver Registration ends */
+
+
+/* Autonook services section  starts*/
+
+.autonookservicessection{
+    width:  100%;
+    height: 70vh;
+    background-image: url('https://images.unsplash.com/photo-1585503418537-88331351ad99?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyJTIwcmVudGFsfGVufDB8fDB8fHww');
+    /* background-image: url('https://savelirentals.com/wp-content/themes/saveli/frontend/www/img/service-about.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.autonookservicessection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 20px;
+    /* background-color: rgba(224, 224, 224, 0.6);  */
+}
+
+.servicessectiondiv{
+    width: 100%;
+    position: absolute;
+    z-index: 10; /* Ensure the text is on top of the overlay */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.servicesectionheading h1{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 35px;
+}
+
+.servicesdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+
+.service-container{
+    /* height: 20vmax; */
+    padding: 10px;
+    border: solid #E3AF17 2px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6) ;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.service1 i{
+    color: #E3AF17;
+    margin-right: 10px;
+}
+
+.service1 p{
+    color: #E3AF17;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.servicespara{
+    margin: 10px 20px;
+    color: white;
+    font-size: 19px;
+}
+
+
+/* Autnook services section ends */
 
 /* Contact us start's here */
 .contact{
@@ -538,13 +622,12 @@ html, body{
     display: flex;
     flex-direction: column;
     padding-top: 2vmax;
-    margin-bottom: 10vmax;
+    background-color: rgb(215, 215, 215);
 }
 
 .contact h1{
     text-align: center;
-    font-size: 40px;
-    margin-top: 10px;
+    font-size: 32px;
 }
 
 .contact-info{
@@ -555,8 +638,8 @@ html, body{
 
 .contact-info .contact-div1{
     width: 20vmax;
-    background: #fff;
-    color: black;
+    background: black;
+    color: white;
     padding: 10px 20px;
     border-radius: 15px;
 }
@@ -568,7 +651,7 @@ html, body{
 
 
 .contact-info .contact-div1 #para1{
-    color: black;
+    color: #E3AF17;
     font-size: 20px;
     font-weight: 700;
 }
@@ -618,13 +701,13 @@ html, body{
 .contact-info .contact-div2 input{
     padding: 10px 10px;
     margin-bottom: 20px;
-    
     font-size: 15px;
     font-family: "Poppins", sans-serif;
-    background: black;
-    border: solid 3px #E3AF17;
+    background: white;
+    border: solid 3px black;
     outline: 0;
-    color: #fff;
+    color: black;
+    border-radius: 10px;
 }
 
 .contact-info .contact-div2 textarea{
@@ -632,19 +715,21 @@ html, body{
     margin-bottom: 20px;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
-    background: black;
-    border: solid 3px #E3AF17;
+    background: white;
+    border: solid 3px black;
     outline: 0;
-    color: #fff;
+    color: black;
     padding: 5px 10px;
     height: 120px;
+    border-radius: 10px;
 }
 
 .contact-info .contact-div2 button{
     width: 10vmax;
-    padding: 7px 15px;
+    padding: 10px 15px;
     font-family: "Poppins", sans-serif;
-    background: #E3AF17;
+    background: black;
+    color: white;
     border: solid #E3AF17;
     border-radius:20px;
     cursor: pointer;
@@ -654,22 +739,17 @@ html, body{
     margin-left: 10px;
 }
 
-.contact-info .contact-div2 button:hover{
-    background: white;
-    transform: scale(1.1);
-    transition: transform 0.5s;
-}
 
 #name:hover{
-    border: solid #fff;
+    border: solid #E3AF17;
 }
 
 #email:hover{
-    border: solid #fff;
+    border: solid #E3AF17;
 }
 
 #message:hover{
-    border:solid #fff;
+    border:solid #E3AF17;
 }
 
 /* Contact us end's here */
